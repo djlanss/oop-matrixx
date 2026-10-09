@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Matrix (Y, 23, 8)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/Matrix.exe",
+      "args": ["23", "8", "Y"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb.exe",
+      "preLaunchTask": "build matrix"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build matrix",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++20",
+        "-g",
+        "-static",
+        "AppManager.cpp",
+        "Character.cpp",
+        "Console.cpp",
+        "Line.cpp",
+        "Matrix.cpp",
+        "-o",
+        "Matrix.exe"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
